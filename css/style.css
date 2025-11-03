@@ -1,0 +1,428 @@
+/* ======================= CÀI ĐẶT CHUNG ======================= */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #d74612;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    min-height: 400px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* ======================= MENU ĐA CẤP ======================= */
+nav {
+    background-color: #0546f7;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+nav a:hover {
+    background-color: #0a06f6;
+}
+
+/* Menu con */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #666;
+    min-width: 200px;
+    flex-direction: column;
+}
+
+nav li:hover > .submenu {
+    display: flex;
+}
+
+/* ======================= TRANG GIỚI THIỆU ======================= */
+.intro-text p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.gioi-thieu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.core-values-card,
+.faculty-card {
+    flex: 1;
+    min-width: 300px;
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.core-values-card h3,
+.faculty-card h3 {
+    margin-top: 0;
+    color: #004a99;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.core-values-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.core-values-card li {
+    background-color: #fff;
+    border-left: 4px solid #004a99;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.faculty-card table {
+    width: 100%;
+    margin-top: 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* ======================= TRANG CHỦ ======================= */
+
+/* Hero section */
+.hero-section {
+    background-color: #004a99;
+    color: white;
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin: 0 0 15px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.cta-button {
+    background-color: white;
+    color: #004a99;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Features Grid */
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    flex: 1;
+    min-width: 280px;
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #004a99;
+}
+
+.feature-item h3 {
+    margin-top: 0;
+    color: #6206f8;
+}
+
+/* Chương trình đào tạo */
+.program-overview {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.program-overview h2 {
+    text-align: center;
+    color: #004a99;
+}
+
+.program-overview ul {
+    list-style-type: '✔';
+    padding-left: 30px;
+}
+
+.program-overview li {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+
+/* Tin tức & Sự kiện (2 cột) */
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.quick-link-box {
+    flex: 1;
+    min-width: 280px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.quick-link-box h3 {
+    margin-top: 0;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+}
+
+.news-box {
+    background-color: #e6f7ff;
+    border-bottom: 4px solid #b3e0ff;
+}
+.news-box h3 { border-color: #b3e0ff; }
+
+.event-box {
+    background-color: #fffbe6;
+    border-bottom: 4px solid #ffeeba;
+}
+.event-box h3 { border-color: #ffeeba; }
+
+.quick-link-box .read-more {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #004a99;
+    text-decoration: none;
+}
+
+.quick-link-box .read-more:hover {
+    text-decoration: underline;
+}
+
+/* ======================= TRANG LIÊN HỆ ======================= */
+.lien-he-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contact-form-wrapper,
+.contact-info-wrapper {
+    flex: 1;
+    min-width: 320px;
+}
+
+.contact-form-wrapper h3,
+.contact-info-wrapper h3 {
+    margin-top: 0;
+    color: #004a99;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #004a99;
+    box-shadow: 0 0 5px rgba(0,74,153,0.2);
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #004a99;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #003366;
+}
+
+.contact-info-wrapper p {
+    font-size: 1.05em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.contact-info-wrapper p strong {
+    color: #333;
+    display: inline-block;
+    min-width: 80px;
+}
+
+.map-title {
+    margin-top: 30px;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #e9e9e9;
+    border: 1px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: #777;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* ======================= TRANG TIN TỨC ======================= */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-meta {
+    font-size: 0.85em;
+    color: #777;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    color: #004a99;
+}
+
+.card p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card .read-more {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0;
+    background-color: #004a99;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card .read-more:hover {
+    background-color: #003366;
+}
